@@ -1,0 +1,15 @@
+package com.epam.Caluculator;
+
+public class Subtraction 
+	{
+		Double a,b;
+		Subtraction(double one,double two)
+		{
+			a=one;
+			b=two;
+		}
+		double diff(int a,int b)
+		{
+				return a-b;
+		}
+	}

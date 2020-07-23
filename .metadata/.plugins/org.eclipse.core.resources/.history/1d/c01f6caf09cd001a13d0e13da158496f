@@ -1,0 +1,14 @@
+package com.epam.Caluculator;
+
+public class Addtion {
+	int a,b;
+	Addtion(int one,int two)
+	{
+		a=one;
+		b=two;
+	}
+	long sum()
+	{
+		return a+b;
+	}
+}

@@ -1,0 +1,49 @@
+package com.epam.Caluculator;
+
+import java.util.Scanner;
+
+public class Calcu {
+	public static void main(String z[])
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		int key=1;
+		while(key>=1&&key<=4)
+		{
+			System.out.println("Select an operation from the following :");
+			System.out.println("1.Add(+)   2.Divide(/)  3.Multiply(*)   4.Subtract(-)	5:Exit");	
+			System.out.println("Enter 2 numbers on whcih operations are to be performed");
+			double one=sc.nextDouble();
+			double two=sc.nextDouble();
+			key=sc.nextInt();
+		switch(key)
+		{
+		case 1:
+			Addtion a=new Addtion(one,two);
+			System.out.println(one+" + "+two+" = " +a.sum());
+			break;
+		
+		case 2:
+			Division d=new Division(one,two);
+			System.out.println("The status of above operation is as :" + d.quo(one,two));
+			break;
+			
+		case 3: 
+			Multiplication m=new Multiplication(one,two);
+			System.out.println(one+" * "+two+" = "+m.prod(one,two));
+			break;
+			
+		case 4:
+			Subtraction s=new Subtraction(one,two);
+			System.out.println(one+"-"+two+" = "+s.diff(one,two));
+			break;
+		case 5:
+			System.out.println("Exit.......!");
+			break;
+		default:
+			System.out.println("Enter a valid choice");
+			break;
+		}
+	 } 
+	}
+}
