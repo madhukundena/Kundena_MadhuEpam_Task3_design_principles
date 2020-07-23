@@ -1,4 +1,4 @@
-# madhukundenaEpam_Task3_design_principles
+# kundenEpam_Task3_design_principles
 
 Implement Calculator Application with Add, Divide, Multiply and Subtract Methods
 ▪ Implement Layered Architecture
